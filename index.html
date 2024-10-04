@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meow Meow!</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <canvas id="canvas"></canvas>
+    <div class="card">
+      <div class="page cover">
+        <div class="content">
+          <h2>To:<br />Mr Nakashima</h2>
+          <button>Click To Open !!</button>
+        </div>
+      </div>
+      <div class="page inside">
+        <div class="content">
+          <img
+            src="./sep.png"
+            alt="thuy"
+            width="80%"
+            style="padding: 30px 0px"
+          />
+          <p class="b-text">
+            Your positive spirit and work attitude have been a powerful
+            inspiration to us. Working with you has been an excellent
+            experience, and we will always remember your guidance. Wishing you
+            continued happiness and success.<br /><br /><br />
+            Keep Smile and Meow Meow
+          </p>
+        </div>
+      </div>
+    </div>
+    <audio id="audio" autoplay loop>
+      <source src="./sep.mp3" type="audio/mpeg" />
+      Your browser does not support the audio tag.
+    </audio>
+
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      document.addEventListener("click", function () {
+        var audio = document.getElementById("audio");
+        audio.play();
+      });
+    </script>
+  </body>
+</html>
